@@ -1,0 +1,48 @@
+@media screen and (min-width: 1024px) {
+    header {
+
+        margin: 3%;
+
+        .logo {
+            max-width: 30%;
+        }
+
+        label {
+            margin-top: 0;
+        }
+    }
+
+    main {
+        .quoteBlock {
+            margin-top: 2%;
+
+            img {
+                max-width: 300px;
+                min-width: 40%;
+                margin-left: 30%;
+            }
+
+
+            .quote {
+                font-size: 25px;;
+            }
+
+        }
+    }
+
+    footer {
+
+        margin-top: 5%;
+
+        .footer {
+
+            margin-left: 45%;
+            margin-right: 45%;
+
+
+            img {
+                width: 40%;
+            }
+        }
+    }
+}

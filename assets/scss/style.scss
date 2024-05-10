@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background: rgb(0,255,123);
+    background: linear-gradient(180deg, rgba(0,255,123,1) 5%, rgba(0,238,140,1) 17%, rgba(0,183,171,1) 32%, rgba(0,145,162,1) 57%, rgba(0,107,132,1) 80%, rgba(47,72,88,1) 99%); 
+    background-repeat: no-repeat;
+    color: black;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+
+    .logo {
+        max-width: 55%;
+    }
+
+    label {
+        margin-top: -8%;
+    }
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .quoteBlock {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        margin-bottom: 5%;
+        margin-top: 15%;
+
+
+        img {
+            min-width: 40%;
+            max-width: 50%;
+            border-radius: 70px;
+            margin-left: 25%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+
+
+            box-shadow: 3px 3px 18px #bebebe,
+            -3px -3px 18px #000000;
+        }
+
+        .quote {
+            font: {
+                family: "IBM Plex Sans", sans-serif;
+                weight: 500;
+                style: italic;
+                
+            }
+        }
+
+        blockquote:before {
+            display: block;
+            content: "\201C";
+            font-size: 80px;
+            left: -20px;
+            top: -20px;
+            color: #7a7a7a;
+            position: absolute;
+            margin-left: 5%;
+        }
+
+        .author {
+            font: {
+                family: "IBM Plex Sans", sans-serif;
+                weight: bold;
+                style: normal;
+                
+            }
+        }
+
+        .quoteNumb {
+            font: {
+                family: "IBM Plex Sans", sans-serif;
+                weight: 200;
+                style: normal;
+            }
+        }
+    }
+}
+
+footer {
+
+    text-align: center;
+    margin-top: 20%;
+    
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 40%;
+        margin-right: 40%;
+
+        img {
+            width : 70%
+        }
+    }
+
+    p {
+        font: {
+            family: "IBM Plex Sans", sans-serif;
+            weight: 200;
+            style: italic;
+            
+        }
+    }
+}
+
+
+@import "darkmodeButton";
+@import "darkmode";
+@import "quoteButton";
+@import "desktop";
+@import "loader";
