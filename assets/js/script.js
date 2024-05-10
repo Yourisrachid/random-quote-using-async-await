@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function(){
         quoteElem.classList.add('quote')
         quoteAuthor.textContent = `— ${author},`;
         quoteAuthor.classList.add('author')
-        totalQuotes.textContent = `Quotes : ${numb}`;
+        totalQuotes.textContent = `Quote${numb !== 1 ? 's' : ''}  : ${numb}`;
         quotePhoto.setAttribute('src', photo)
         quotePhoto.setAttribute('alt', `${author}'s photo`)
         quotePhoto.classList.add('photo')
@@ -86,7 +86,7 @@ button.addEventListener('click', function(){
 
         quoteElem.textContent = quote;
         quoteAuthor.textContent = `— ${author},`;
-        totalQuotes.textContent = `Quotes : ${numb}`;
+        totalQuotes.textContent = `Quote${numb !== 1 ? 's' : ''}  : ${numb}`;
         quotePhoto.setAttribute('src', photo)
         quotePhoto.setAttribute('alt', `${author}'s photo`)
 
