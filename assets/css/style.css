@@ -29,16 +29,16 @@ main {
 main .quoteBlock {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   position: relative;
   margin-bottom: 5%;
   margin-top: 15%;
 }
 main .quoteBlock img {
-  min-width: 40%;
-  max-width: 50%;
+  min-width: 100px;
+  max-width: 300px;
   border-radius: 70px;
-  margin-left: 25%;
   margin-top: 2%;
   margin-bottom: 2%;
   box-shadow: 3px 3px 18px #bebebe, -3px -3px 18px #000000;
@@ -47,6 +47,7 @@ main .quoteBlock .quote {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 500;
   font-style: italic;
+  font-size: 28px;
 }
 main .quoteBlock blockquote:before {
   display: block;
@@ -251,6 +252,8 @@ body.darkmode .animated-button:hover .circle {
   cursor: pointer;
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 
 .animated-button svg {
@@ -322,6 +325,11 @@ body.darkmode .animated-button:hover .circle {
   opacity: 1;
 }
 
+.quotebutton {
+  position: sticky;
+  bottom: 5px;
+}
+
 @media screen and (min-width: 1024px) {
   header {
     margin: 3%;
@@ -336,9 +344,9 @@ body.darkmode .animated-button:hover .circle {
     margin-top: 2%;
   }
   main .quoteBlock img {
+    min-width: 300;
     max-width: 300px;
-    min-width: 40%;
-    margin-left: 30%;
+    padding: 0;
   }
   main .quoteBlock .quote {
     font-size: 25px;

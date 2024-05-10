@@ -6,6 +6,8 @@ darkMode();
 
 const blockQuote = document.querySelector('.quoteBlock')
 const button = document.querySelector('button')
+const imgdiv = document.createElement('div')
+imgdiv.classList.add('imgdiv')
 
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -43,9 +45,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
         authorBlock.appendChild(quoteAuthor)
         authorBlock.appendChild(totalQuotes)
+        imgdiv.appendChild(quotePhoto)
 
         blockQuote.appendChild(quoteElem)
-        blockQuote.appendChild(quotePhoto)
+        blockQuote.appendChild(imgdiv)
         blockQuote.appendChild(authorBlock)
 
 
