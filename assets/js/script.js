@@ -29,12 +29,19 @@ document.addEventListener('DOMContentLoaded', function(){
         const quoteElem = document.createElement('blockquote')
         const quoteAuthor = document.createElement('p')
         const quotePhoto = document.createElement('img')
+        const wiki = document.createElement('a')
+        const wikiImg = document.createElement('img')
         const totalQuotes = document.createElement('p')
 
         quoteElem.textContent = quote;
         quoteElem.classList.add('quote')
         quoteAuthor.textContent = `— ${author},`;
         quoteAuthor.classList.add('author')
+        wiki.classList.add('wiki')
+        wiki.setAttribute('href', `https://en.wikipedia.org/wiki/${author.replace(/ /g, "_")}`)
+        wikiImg.setAttribute('src', 'assets/img/social.svg')
+        wikiImg.classList.add('wikiimg')
+        wiki.setAttribute('target', '"_blank"')
         totalQuotes.textContent = `Quote${numb !== 1 ? 's' : ''}  : ${numb}`;
         quotePhoto.setAttribute('src', photo)
         quotePhoto.setAttribute('alt', `${author}'s photo`)
@@ -44,6 +51,8 @@ document.addEventListener('DOMContentLoaded', function(){
         totalQuotes.classList.add('quoteNumb')
 
         authorBlock.appendChild(quoteAuthor)
+        wiki.appendChild(wikiImg)
+        authorBlock.appendChild(wiki)
         authorBlock.appendChild(totalQuotes)
         imgdiv.appendChild(quotePhoto)
 
@@ -83,7 +92,9 @@ button.addEventListener('click', function(){
         const quoteAuthor = document.querySelector('.author')
         const quotePhoto = document.querySelector('.photo')
         const totalQuotes = document.querySelector('.quoteNumb')
-
+        const wiki = document.querySelector('.wiki')
+        const wikiImg = document.createElement('.wikiimg')
+        
         quoteElem.textContent = quote;
         quoteAuthor.textContent = `— ${author},`;
         totalQuotes.textContent = `Quote${numb !== 1 ? 's' : ''}  : ${numb}`;

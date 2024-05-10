@@ -348,6 +348,10 @@ body.darkmode .animated-button:hover .circle {
     max-width: 300px;
     padding: 0;
   }
+  main .quoteBlock .wikiimg {
+    min-width: 1%;
+    max-width: 3%;
+  }
   main .quoteBlock .quote {
     font-size: 25px;
   }
