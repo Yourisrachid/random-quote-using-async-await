@@ -11,9 +11,16 @@ body {
 
         main {
           .quoteBlock {
-            img {
+
+            .photo {
               box-shadow: 3px 3px 18px #bebebe,
               -3px -3px 18px #00ff7b;
+            }
+
+            .wikiimg {
+              border-radius: 20px;
+              box-shadow: 1px 1px 5px #bebebe,
+              -1px -1px 5px #00ff7b;
             }
           }
         }

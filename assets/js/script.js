@@ -93,19 +93,19 @@ button.addEventListener('click', function(){
         const quotePhoto = document.querySelector('.photo')
         const totalQuotes = document.querySelector('.quoteNumb')
         const wiki = document.querySelector('.wiki')
-        const wikiImg = document.createElement('.wikiimg')
+        const wikiImg = document.querySelector('.wikiimg')
         
         quoteElem.textContent = quote;
         quoteAuthor.textContent = `— ${author},`;
         totalQuotes.textContent = `Quote${numb !== 1 ? 's' : ''}  : ${numb}`;
         quotePhoto.setAttribute('src', photo)
         quotePhoto.setAttribute('alt', `${author}'s photo`)
+        wiki.setAttribute('href', `https://en.wikipedia.org/wiki/${author.replace(/ /g, "_")}`)
 
 	})
 
 	.catch((error) => {
 		console.log("There was an error!", error);
-
 	});
 
 })

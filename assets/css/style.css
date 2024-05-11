@@ -35,7 +35,7 @@ main .quoteBlock {
   margin-bottom: 5%;
   margin-top: 15%;
 }
-main .quoteBlock img {
+main .quoteBlock .photo {
   min-width: 100px;
   max-width: 300px;
   border-radius: 70px;
@@ -63,6 +63,12 @@ main .quoteBlock .author {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: bold;
   font-style: normal;
+}
+main .quoteBlock .wikiimg {
+  min-width: 1%;
+  max-width: 5%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px #bebebe, -1px -1px 5px #000000;
 }
 main .quoteBlock .quoteNumb {
   font-family: "IBM Plex Sans", sans-serif;
@@ -152,8 +158,12 @@ body.darkmode {
 body.darkmode .logo {
   filter: brightness(0) saturate(100%) invert(74%) sepia(73%) saturate(556%) hue-rotate(81deg) brightness(93%) contrast(92%);
 }
-body.darkmode main .quoteBlock img {
+body.darkmode main .quoteBlock .photo {
   box-shadow: 3px 3px 18px #bebebe, -3px -3px 18px #00ff7b;
+}
+body.darkmode main .quoteBlock .wikiimg {
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px #bebebe, -1px -1px 5px #00ff7b;
 }
 body.darkmode .footer img {
   filter: brightness(0) saturate(100%) invert(74%) sepia(73%) saturate(556%) hue-rotate(81deg) brightness(93%) contrast(92%);
